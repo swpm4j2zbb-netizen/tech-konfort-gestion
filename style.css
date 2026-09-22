@@ -4,3 +4,20 @@
 /* V2 functional modules */
 .dataTable{width:100%;border-collapse:collapse}.dataTable th,.dataTable td{padding:14px 12px;border-bottom:1px solid #242a2d;text-align:left}.dataTable th{font-size:11px;color:#9ca4a8;text-transform:uppercase;letter-spacing:.08em}.dataTable tr:hover td{background:#121719}.status{display:inline-flex;padding:5px 9px;border:1px solid #4d4230;border-radius:99px;color:#d7b56d;font-size:11px}.actions{display:flex;gap:8px;flex-wrap:wrap}.mini{padding:7px 10px!important;font-size:11px!important}.moduleGrid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-bottom:18px}.moduleGrid article{background:#111517;border:1px solid #262d30;border-radius:14px;padding:18px}.moduleGrid strong{display:block;font-size:24px;margin-top:8px}.stack{display:grid;gap:14px}.formrow{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.formrow label,.stack label{font-size:12px;color:#a9b0b4}.formrow input,.formrow select,.stack input,.stack select,.stack textarea{margin-top:6px;width:100%}.logoImg{width:58px;height:58px;object-fit:cover;border-radius:10px}.docPreview{background:#fff;color:#111;padding:28px;border-radius:12px;max-width:850px;margin:auto}.docPreview h1{color:#111}.docPreview table{width:100%;border-collapse:collapse}.docPreview td,.docPreview th{padding:8px;border-bottom:1px solid #ddd}.danger{border-color:#6c3434!important;color:#ef9b9b!important}.emptyModule{padding:50px;text-align:center;color:#8f989d}.bigNumber{font-size:30px;font-weight:800}.settingsActions{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}@media(max-width:850px){.moduleGrid{grid-template-columns:1fr 1fr}.formrow{grid-template-columns:1fr 1fr}.dataWrap{overflow:auto}.dataTable{min-width:700px}.logoImg{width:44px;height:44px}}@media(max-width:520px){.moduleGrid{grid-template-columns:1fr}.formrow{grid-template-columns:1fr}.pagebar{align-items:flex-start;gap:12px}.pagebar .primary{width:100%}}
 @media print{body *{visibility:hidden}.printable,.printable *{visibility:visible}.printable{position:absolute;left:0;top:0;width:100%;background:white;color:black}.sidebar,header,.mobileMenu{display:none!important}}
+
+/* V1.2 — logo officiel + menu mobile fiabilisé */
+.mobileBrand,.menuBackdrop{display:none}
+@media(max-width:900px){
+  .mobileBrand{display:block;position:fixed;top:calc(env(safe-area-inset-top) + 8px);left:72px;z-index:45;width:118px;height:54px;overflow:hidden;border-radius:8px;background:#050505;border:1px solid #4a3a20}
+  .mobileBrand img{width:100%;height:100%;object-fit:contain;display:block}
+  .mobileMenu{top:calc(env(safe-area-inset-top) + 13px);left:13px;z-index:60;cursor:pointer;touch-action:manipulation;-webkit-tap-highlight-color:transparent}
+  header{padding-top:calc(env(safe-area-inset-top) + 12px);padding-left:205px;min-height:78px}
+  header h1{font-size:17px}
+  header p{font-size:11px}
+  .sidebar{z-index:70;padding-top:calc(env(safe-area-inset-top) + 20px);box-shadow:20px 0 60px #0000}
+  .sidebar.open{box-shadow:20px 0 60px #000b}
+  .menuBackdrop{position:fixed;inset:0;z-index:65;background:#0009;backdrop-filter:blur(2px)}
+  .menuBackdrop.open{display:block}
+  .sidebar .logoImg{width:90px;height:58px;object-fit:contain;background:#050505}
+}
+@media(max-width:430px){.mobileBrand{width:105px}.mobileBrand+ .mobileMenu{} header{padding-left:190px} header p{display:none}}
