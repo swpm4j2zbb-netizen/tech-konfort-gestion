@@ -49,12 +49,12 @@ html,body{background:#090c0e!important;min-height:100%;overscroll-behavior-y:non
 
 /* === TECH KONFORT V1.4 — filigrane carte accueil + formulaires iPhone === */
 .hero{position:relative;overflow:hidden;isolation:isolate}
-.hero::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(rgba(10,12,12,.84),rgba(10,12,12,.88)),url('logo-officiel.jpg') center/72% auto no-repeat;opacity:.42;pointer-events:none}
+.hero::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(rgba(10,12,12,.84),rgba(10,12,12,.88)),url('logo-officiel.jpg') center/72% auto no-repeat;opacity:.56;pointer-events:none}
 .hero-copy,.hero-art{position:relative;z-index:1}
 input,select,textarea{box-sizing:border-box;max-width:100%;min-width:0}
 .formgrid label{min-width:0;max-width:100%}
 @media(max-width:900px){
-  .hero::before{background:linear-gradient(rgba(10,12,12,.82),rgba(10,12,12,.88)),url('logo-officiel.jpg') center/92% auto no-repeat;opacity:.44}
+  .hero::before{background:linear-gradient(rgba(10,12,12,.82),rgba(10,12,12,.88)),url('logo-officiel.jpg') center/92% auto no-repeat;opacity:.58}
   .formgrid{width:100%;min-width:0}
   .formgrid label,.formgrid input,.formgrid select{width:100%!important;max-width:100%!important;min-width:0!important}
   #qdate,#qvalid{-webkit-appearance:none;appearance:none;display:block;box-sizing:border-box}
